@@ -7,12 +7,12 @@ Semua benchmark dilakukan pada info berikut:
 - libpcre2 (PCRE2_CODE_UNIT_WIDTH = 8)
 
 
-| Judul Kode   | Score (terendah lebih baik) | Persentase dari peringkat terbawah | Info                               |
-|--------------|-----------------------------|------------------------------------|------------------------------------|
-| token        | 1,9749                      | 24,99% Lebih cepat dari regex      |                                    |
-| pp_inline    | 1,9796                      | 24,81% Lebih cepat dari regex      |                                    |
-| inline       | 1,9847                      | 24,62% Lebih cepat dari regex      |                                    |
-| array        | 1,9977                      | 24,12% Lebih cepat dari regex      |                                    |
-| branch       | 2,0044                      | 23,87% Lebih cepat dari regex      |                                    |
-| regex_simply | 2,5942                      | 1,46% Lebih cepat dari regex       | no-jit, no compiled/cached pattern |
-| regex        | 2,6326                      |                                    | no-jit, no compiled/cached pattern |
+| Judul Kode   | Score (terendah lebih baik) | Persentase dari peringkat terbawah | Info                      |
+|--------------|-----------------------------|------------------------------------|---------------------------|
+| token        | 1,9749                      | 24,99% Lebih cepat dari regex      |                           |
+| pp_inline    | 1,9796                      | 24,81% Lebih cepat dari regex      |                           |
+| inline       | 1,9847                      | 24,62% Lebih cepat dari regex      |                           |
+| array        | 1,9977                      | 24,12% Lebih cepat dari regex      |                           |
+| branch       | 2,0044                      | 23,87% Lebih cepat dari regex      |                           |
+| regex_simply | 2,5942                      | 1,46% Lebih cepat dari regex       | no-jit, no cached pattern |
+| regex        | 2,6326                      |                                    | no-jit, no cached pattern |
