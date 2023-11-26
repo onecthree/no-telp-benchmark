@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+clear
+sudo perf stat -o results/trace_regex bash benchmark/regex.sh
+clear
+sudo perf stat -o results/trace_regex_simply bash benchmark/regex_simply.sh
+clear
+sudo perf stat -o results/trace_inline bash benchmark/inline.sh
+clear
+sudo perf stat -o results/trace_pp_inline bash benchmark/pp_inline.sh
+clear
+sudo perf stat -o results/trace_token bash benchmark/token.sh
+clear
+sudo perf stat -o results/trace_branch bash benchmark/branch.sh
+clear
+sudo perf stat -o results/trace_array bash benchmark/array.sh
+clear
+
+echo "benchmark results:"
+
+trace=$(cat results/trace_branch | grep time)
+echo "branch: " $trace
+
+trace=$(cat results/trace_array | grep time)
+echo "array: " $trace
+
+trace=$(cat results/trace_inline | grep time)
+echo "inline: " $trace
+
+trace=$(cat results/trace_pp_inline | grep time)
+echo "pp_inline: " $trace
+
+trace=$(cat results/trace_token | grep time)
+echo "token: " $trace
+
+trace=$(cat results/trace_regex_simply | grep time)
+echo "regex_simply: " $trace
+
+trace=$(cat results/trace_regex | grep time)
+echo "regex: " $trace

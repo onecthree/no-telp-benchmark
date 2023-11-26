@@ -1,0 +1,55 @@
+#1
+branch:  1,999750591 seconds time elapsed
+array:  2,008559969 seconds time elapsed
+inline:  1,994237910 seconds time elapsed
+pp_inline:  1,997342592 seconds time elapsed
+token:  1,964069385 seconds time elapsed
+regex_simply:  2,564270867 seconds time elapsed
+regex:  2,616987317 seconds time elapsed
+
+#2
+branch:  2,020683062 seconds time elapsed
+array:  1,991777120 seconds time elapsed
+inline:  1,992492115 seconds time elapsed
+pp_inline:  1,971055886 seconds time elapsed
+token:  1,960767926 seconds time elapsed
+regex_simply:  2,617171677 seconds time elapsed
+regex:  2,639689392 seconds time elapsed
+
+#3
+branch:  2,005781226 seconds time elapsed
+array:  1,958594596 seconds time elapsed
+inline:  1,985126633 seconds time elapsed
+pp_inline:  1,984971158 seconds time elapsed
+token:  1,969619232 seconds time elapsed
+regex_simply:  2,588152550 seconds time elapsed
+regex:  2,621540612 seconds time elapsed
+
+#4
+branch:  1,998511261 seconds time elapsed
+array:  2,032295680 seconds time elapsed
+inline:  1,966311420 seconds time elapsed
+pp_inline:  1,979969120 seconds time elapsed
+token:  2,009876186 seconds time elapsed
+regex_simply:  2,619320623 seconds time elapsed
+regex:  2,657439951 seconds time elapsed
+
+#5
+branch:  1,997678978 seconds time elapsed
+array:  1,997839158 seconds time elapsed
+inline:  1,985815845 seconds time elapsed
+pp_inline:  1,965016535 seconds time elapsed
+token:  1,970489551 seconds time elapsed
+regex_simply:  2,582466094 seconds time elapsed
+regex:  2,627788195 seconds time elapsed
+
+
+Rata-rata (total time elapsed / 5):
+
+token: 1,9749 (24,99% Lebih cepat dari regex)
+pp_inline: 1,9796 (24,81% Lebih cepat dari regex)
+inline: 1,9847 (24,62% Lebih cepat dari regex)
+array: 1,9977 (24,12% Lebih cepat dari regex)
+branch: 2,0044 (23,87% Lebih cepat dari regex)
+regex_simply: 2,5942 (1,46% Lebih cepat dari regex) (no-jit, no compiled/cached pattern)
+regex: 2,6326 (no-jit, no compiled/cached pattern)
