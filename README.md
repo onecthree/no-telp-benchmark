@@ -6,6 +6,8 @@ Semua benchmark dilakukan pada info berikut:
 - gcc v9.4.0
 - libpcre2 (PCRE2_CODE_UNIT_WIDTH = 8)
 
+Test run 5 kali, lalu hitung rata-rata (total / 5).
+Lihat calculation.txt
 
 | Judul Kode   | Score (terendah lebih baik) | Persentase dari peringkat terbawah | Info                      |
 |--------------|-----------------------------|------------------------------------|---------------------------|
